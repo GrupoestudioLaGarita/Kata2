@@ -6,11 +6,11 @@ public class Kata2 {
 
 
     public static void main(String[] args) {
-       Integer[] data = {1, 2, 4, 6, 7, 8 ,1 ,5, 9, 2, 1, 7 ,2, 6, 5};
+       String[] data = {"Rosa", "Pepe", "María", "Pepe", "Pepe", "Rosa"};
        Histogram histo = new Histogram(data);
-       Map<Integer, Integer> histogr = histo.GetHistogram();
+       Map<String, Integer> histogr = histo.GetHistogram();
         
-        for (Map.Entry<Integer, Integer> entry : histogr.entrySet()) {
+        for (Map.Entry<String, Integer> entry : histogr.entrySet()) {
             System.out.println(entry.getKey() + " ==> " + entry.getValue());
         }
     }
